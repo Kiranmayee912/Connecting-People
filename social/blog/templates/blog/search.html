@@ -1,0 +1,6 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for u in susers %}
+        <a href="{% url 'timeline' u.pk %} "> {{u.username}}</a>s
+    {% endfor %}
+{% endblock content %}
